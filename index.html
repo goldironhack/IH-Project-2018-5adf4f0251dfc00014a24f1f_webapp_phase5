@@ -1,15 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Hello World!</h1>
-        <button id="btn">Click me</button>
-    </div>
-    <script src="index.js"></script>
-</body>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/v2.2.3/mapbox.js"></script>
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v2.2.3/mapbox.css" />
+    <script type="text/javascript" src="https:////api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.2/turf.min.js"></script>
+
+    <title>NYU</title>
+  </head>
+      <body>
+
+       <br/>
+
+      <div id="map"></div>
+      <script>
+           L.mapbox.accessToken = 'pk.eyJ1IjoibW9yZ2FuaGVybG9ja2VyIiwiYSI6Ii1zLU4xOWMifQ.FubD68OEerk74AYCLduMZQ';
+      </script>
+
+
+    	<div class="row justify-content-center">
+            <button id="getNeighborhoodNames">Distance</button>
+            <button id="getHousingNY">Affordability</button>
+            <button id="getSafety">Safety</button>
+      </div>
+
+
+
+	<script
+ 	 src="https://code.jquery.com/jquery-3.3.1.min.js"
+  	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARD8AJykZ5pTbZusyz0D-TY1GEJJGYsDY&callback=initMap"
+    async defer></script>
+
+  </body>
 </html>
